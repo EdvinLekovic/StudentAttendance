@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">StudentAttendance</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string-array name="student_courses">
+        <item>Business and management</item>
+        <item>Introduction to computer science</item>
+        <item>Discrete Mathematics</item>
+        <item>Professional Skills</item>
+        <item>Structural programming</item>
+        <item>Architecture and organization of computers</item>
+        <item>Business statistics</item>
+        <item>Marketing</item>
+        <item>Object-oriented programming</item>
+        <item>Fundamentals of web design</item>
+        <item>Algorithms and data structures</item>
+        <item>Computer networks and security</item>
+        <item>Advance programming</item>
+        <item>Client side Internet programming</item>
+        <item>User interfaces design patterns</item>
+        <item>Operating systems</item>
+        <item>Software engineering</item>
+        <item>Internet technologies</item>
+        <item>E-government</item>
+        <item>Artificial intelligence</item>
+        <item>Databases</item>
+        <item>Web programming</item>
+        <item>Introduction to data science</item>
+        <item>Mobile platforms and programming</item>
+        <item>Parallel and distribute processing</item>
+        <item>Human-computer design and interaction</item>
+        <item>E-commerce</item>
+        <item>Multimedia systems</item>
+        <item>Unstructured databases and XML</item>
+        <item>Introduction to cognitive science</item>
+        <item>Digital libraries</item>
+        <item>Management of information systems</item>
+        <item>Team project</item>
+        <item>Machine vision</item>
+        <item>Autonomous robotics</item>
+        <item>Internet of things</item>
+        <item>Entrepreneurship</item>
+        <item>Computer animation</item>
+        <item>Mobile application</item>
+        <item>Advance databases</item>
+        <item>Intelligent systems</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

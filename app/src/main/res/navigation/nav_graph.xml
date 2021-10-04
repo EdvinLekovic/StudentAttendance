@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.studentattendance.HomeFragment"
+        android:label="home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_StudentSubjectAttendanceFragment"
+            app:destination="@id/StudentSubjectAttendanceFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_Course_List_Professor_Fragment"
+            app:destination="@id/CourseListProfessorFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.studentattendance.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CalendarFragment"
+            app:destination="@id/CalendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.studentattendance.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CalendarFragment"
+        android:name="com.example.studentattendance.CalendarFragment"
+        android:label="calendar_fragment"
+        tools:layout="@layout/fragment_calendar">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/StudentSubjectAttendanceFragment"
+        android:name="com.example.studentattendance.StudentSubjectAttendanceFragment"
+        android:label="student_subject_attendance_fragment"
+        tools:layout="@layout/fragment_student_subject_attendance">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CourseListProfessorFragment"
+        android:name="com.example.studentattendance.CoursesListProfessorFragment"
+        android:label="course_list_professor_fragment"
+        tools:layout="@layout/fragment_courses_list_professor">
+        <action
+            android:id="@+id/action_CourseListProfessorFragment_to_CourseListInfoFragment"
+            app:destination="@id/CourseInfoFragment" />
+        <action
+            android:id="@+id/action_CourseListProfessorFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CourseInfoFragment"
+        android:name="com.example.studentattendance.CourseInfoFragment"
+        android:label="course_info_fragment"
+        tools:layout="@layout/fragment_course_info">
+        <action
+            android:id="@+id/action_CourseListInfoFragment_to_CourseListProfessorFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"
+            app:destination="@id/CourseListProfessorFragment" />
+
+    </fragment>
+
+</navigation>
